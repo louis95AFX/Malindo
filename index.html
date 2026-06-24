@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malindo'si | World-Class Luxury Spa & Wellness Destination</title>
     <meta name="description" content="Indulge in luxury. Experience premium spa, beauty, and wellness treatments designed to rejuvenate your body, mind, and soul.">
-    <!-- Font Stylesheets -->
+    <!-- Google Fonts: Playfair Display for Serifs, Inter for ultra-modern clean sans-serif text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome Icons for Luxury Accents -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Floating Global Actions -->
-    <a href="https://wa.me/1234567890" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <!-- Global Floating Contact -->
+    <a href="https://wa.me/27747257947" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <a href="#booking-section" class="floating-book-now-btn">Book Now</a>
 
-    <!-- Header / Navigation -->
+    <!-- Navigation Header -->
     <header class="luxury-header">
         <div class="nav-container">
             <a href="#" class="brand-logo">Malindo'si</a>
@@ -34,14 +33,10 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#packages" class="nav-link">Packages</a></li>
-                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li><a href="#membership" class="nav-link">Membership</a></li>
-                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#booking-section" class="nav-btn">Book Now</a></li>
+                    <li><a href="#about" class="nav-link">Our Essence</a></li>
+                    <li><a href="#services" class="nav-link">Treatments</a></li>
+                    <li><a href="#packages" class="nav-link">Curated Packages</a></li>
+                    <li><a href="#booking-section" class="nav-btn">Reserve Now</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,655 +44,357 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <!-- Video placeholder container. Replace src with your cinematic video loop asset -->
-        <div class="video-background-container">
-            <div class="video-overlay"></div>
-            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80" alt="Luxury Spa Ambiance" class="fallback-hero-image">
-        </div>
+        <div class="hero-bg-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80" alt="Luxury Spa Ambiance" class="hero-bg-image">
         <div class="hero-content">
-            <h1 class="hero-headline">Indulge in Luxury.<br><span class="accent-text">Relax in Elegance.</span></h1>
-            <p class="hero-subheadline">Experience premium spa, beauty, and wellness treatments designed to rejuvenate your body, mind, and soul.</p>
+            <span class="section-subtitle">Sanctuary of the Senses</span>
+            <h1 class="hero-headline">Indulge in luxury.<br><span class="accent-text">Relax in elegance.</span></h1>
+            <p class="hero-subheadline">Immersive biological wellness rituals and elite body work crafted strictly to rejuvenate body, mind, and spirit.</p>
             <div class="hero-cta-group">
                 <a href="#booking-section" class="btn btn-primary">Book Appointment</a>
-                <a href="#services" class="btn btn-secondary">View Services</a>
+                <a href="#services" class="btn btn-secondary">Explore Rituals</a>
             </div>
         </div>
-        <div class="hero-stats-bar">
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-strip">
+        <div class="container grid-4">
             <div class="stat-item">
-                <span class="stat-number" data-target="5000">5,000+</span>
+                <span class="stat-number">5k+</span>
                 <span class="stat-label">Happy Clients</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number" data-target="10">10+</span>
-                <span class="stat-label">Years Experience</span>
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Years of Mastery</span>
             </div>
             <div class="stat-item">
                 <span class="stat-number">100%</span>
-                <span class="stat-label">Luxury Treatments</span>
+                <span class="stat-label">Bespoke Organic Compounds</span>
             </div>
             <div class="stat-item">
                 <span class="stat-number">Elite</span>
-                <span class="stat-label">Professional Therapists</span>
+                <span class="stat-label">Licensed Therapists</span>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Essence/About Section -->
     <section id="about" class="about-section section-padding">
-        <div class="container grid-2">
-            <div class="about-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" alt="Exclusive Treatment Room" class="about-img-primary">
-                <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=600&q=80" alt="Premium Products" class="about-img-secondary">
-            </div>
+        <div class="container grid-2 align-center">
             <div class="about-text-content">
-                <span class="section-subtitle">Our Sanctuary</span>
-                <h2 class="section-title">The Masterpiece of Wellness</h2>
-                <p class="luxury-paragraph">Founded on the principle of pure uncompromising luxury, Malindo'si bridges ancient holistic therapy with state-of-the-art biological science. Our mission is to transport you out of time into an elite universe of tailored relaxation.</p>
-                <div class="about-features-grid">
-                    <div class="feature-item">
-                        <i class="fa-solid fa-award"></i>
-                        <h3>Certified Elite Therapists</h3>
-                        <p>Trained meticulously in global luxury techniques.</p>
+                <span class="section-subtitle">Our Philosophy</span>
+                <h2 class="section-title">The Masterpiece of Modern Wellness</h2>
+                <p class="luxury-paragraph">Where centuries-old dynamic body realignment meets pure raw organic science. Our purpose is simple: transport you into an elite state of restorative suspension.</p>
+                <div class="features-stack">
+                    <div class="feature-line">
+                        <span class="gold-dot"></span>
+                        <div>
+                            <h3>Certified Elite Practitioners</h3>
+                            <p>Meticulously trained in traditional and localized therapeutic profiles.</p>
+                        </div>
                     </div>
-                    <div class="feature-item">
-                        <i class="fa-solid fa-sparkles"></i>
-                        <h3>Premium Cult Products</h3>
-                        <p>Only the world’s finest organic and biological compounds.</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fa-solid fa-shield-clean"></i>
-                        <h3>Ultra-Hygienic Environment</h3>
-                        <p>Medical-grade sterilization with 5-star comfort metrics.</p>
+                    <div class="feature-line">
+                        <span class="gold-dot"></span>
+                        <div>
+                            <h3>Premium Biological Sourced Compounds</h3>
+                            <p>Only wild-crafted pure botanical concentrates touch your skin surface.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="about-image-showcase">
+                <div class="frame-decor"></div>
+                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" alt="Treatment Suite" class="about-main-img">
+            </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services / Treatment Display Section -->
     <section id="services" class="services-section section-padding">
-        <div class="container text-center">
-            <span class="section-subtitle">Exquisite Rituals</span>
-            <h2 class="section-title">Our Signature Services</h2>
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">Signature Work</span>
+                <h2 class="section-title">The Wellness Menu</h2>
+            </div>
             
-            <!-- Category Tabs -->
             <div class="services-tabs">
                 <button class="tab-btn active" data-category="massages">Massages</button>
                 <button class="tab-btn" data-category="hands-feet">Hands & Feet</button>
                 <button class="tab-btn" data-category="waxing">Waxing</button>
                 <button class="tab-btn" data-category="lashes">Lashes</button>
-                <button class="tab-btn" data-category="slimming">Body Slimming</button>
+                <button class="tab-btn" data-category="slimming">Slimming</button>
             </div>
 
-            <!-- Service Grid Display System -->
             <div class="services-display-grid">
-                <!-- Massages Category -->
+                <!-- Category: Massages -->
                 <div class="service-category-group active" id="massages">
                     <div class="grid-3">
-                        <!-- Card 1 -->
                         <div class="service-card">
-                            <div class="service-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80" alt="Aromatherapy Massage">
+                            <div class="card-img-holder">
+                                <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80" alt="Aromatherapy">
                             </div>
-                            <div class="service-card-content">
-                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 / 90 Mins</span>
+                            <div class="card-body">
                                 <h3>Aromatherapy Massage</h3>
-                                <p class="service-price">R140</p>
-                                <p class="service-description">Infused with customized rare botanical essential oils to soothe nervous pathways.</p>
-                                <a href="#booking-section" class="service-book-btn">Book Treatment</a>
+                                <span class="card-meta">60 / 90 Mins &bull; R140</span>
+                                <p>Infused with rare custom botanical essences chosen to reset neural balance channels completely.</p>
+                                <a href="#booking-section" class="card-link">Reserve Treatment</a>
                             </div>
                         </div>
-                        <!-- Card 2 -->
                         <div class="service-card">
-                            <div class="service-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="Hot Stone Massage">
+                            <div class="card-img-holder">
+                                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="Hot Stone">
                             </div>
-                            <div class="service-card-content">
-                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 75 Mins</span>
+                            <div class="card-body">
                                 <h3>Hot Stone Massage</h3>
-                                <p class="service-price">R165</p>
-                                <p class="service-description">Volcanic basalt stones balanced safely across energetic meridians for deep heat melting.</p>
-                                <a href="#booking-section" class="service-book-btn">Book Treatment</a>
+                                <span class="card-meta">75 Mins &bull; R165</span>
+                                <p>Smooth volcanic basalt blocks heat-balanced carefully across pathways to dissolve deep muscle tension.</p>
+                                <a href="#booking-section" class="card-link">Reserve Treatment</a>
                             </div>
                         </div>
-                        <!-- Card 3 -->
                         <div class="service-card">
-                            <div class="service-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80" alt="Deep Tissue Massage">
+                            <div class="card-img-holder">
+                                <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80" alt="Deep Tissue">
                             </div>
-                            <div class="service-card-content">
-                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 / 90 Mins</span>
+                            <div class="card-body">
                                 <h3>Deep Tissue Massage</h3>
-                                <p class="service-price">R155</p>
-                                <p class="service-description">Focused structural manipulation targeting sub-surface muscle layers and chronic tension.</p>
-                                <a href="#booking-section" class="service-book-btn">Book Treatment</a>
+                                <span class="card-meta">60 / 90 Mins &bull; R155</span>
+                                <p>Focused sub-surface structural adjustments target stubborn trigger bands and long-term tension matrix points.</p>
+                                <a href="#booking-section" class="card-link">Reserve Treatment</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Hands-feet Category -->
+                <!-- Category: Hands & Feet -->
                 <div class="service-category-group" id="hands-feet">
                     <div class="grid-3">
                         <div class="service-card">
-                            <div class="service-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1604654894610-df490651e56c?auto=format&fit=crop&w=600&q=80" alt="Deluxe Pedicure">
+                            <div class="card-img-holder">
+                                <img src="https://images.unsplash.com/photo-1604654894610-df490651e56c?auto=format&fit=crop&w=600&q=80" alt="Pedicure">
                             </div>
-                            <div class="service-card-content">
-                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 Mins</span>
+                            <div class="card-body">
                                 <h3>Deluxe Pedicure with Gel</h3>
-                                <p class="service-price">R85</p>
-                                <p class="service-description">Premium thermal foot bath exfoliation followed by flawless gel lacquer design execution.</p>
-                                <a href="#booking-section" class="service-book-btn">Book Treatment</a>
+                                <span class="card-meta">60 Mins &bull; R85</span>
+                                <p>Thermal mineral soak, physical micro-exfoliation, and a crisp, damage-resistant gel lacquer application overlay.</p>
+                                <a href="#booking-section" class="card-link">Reserve Treatment</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Waxing Category -->
+                <!-- Category: Waxing -->
                 <div class="service-category-group" id="waxing">
                     <div class="grid-3">
                         <div class="service-card">
-                            <div class="service-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Waxing Treatments">
+                            <div class="card-img-holder">
+                                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Waxing">
                             </div>
-                            <div class="service-card-content">
-                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 45 Mins</span>
+                            <div class="card-body">
                                 <h3>Full Hollywood Wax</h3>
-                                <p class="service-price">R70</p>
-                                <p class="service-description">Hyper-sensitive luxury polymer waxes minimizing discomfort for pristine smoothing finish results.</p>
-                                <a href="#booking-section" class="service-book-btn">Book Treatment</a>
+                                <span class="card-meta">45 Mins &bull; R70</span>
+                                <p>Hypoallergenic polymer resin matrix setup provides a clean, ultra-smooth finish across delicate skin layers.</p>
+                                <a href="#booking-section" class="card-link">Reserve Treatment</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Lashes Category -->
+                <!-- Category: Lashes -->
                 <div class="service-category-group" id="lashes">
                     <div class="grid-3">
                         <div class="service-card">
-                            <div class="service-card-img-wrap">
+                            <div class="card-img-holder">
                                 <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=600&q=80" alt="Lashes">
                             </div>
-                            <div class="service-card-content">
-                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 120 Mins</span>
+                            <div class="card-body">
                                 <h3>Premium Volume Lashes</h3>
-                                <p class="service-price">R180</p>
-                                <p class="service-description">Impeccably lightweight extensions custom fanned to maximize dimensional elegance.</p>
-                                <a href="#booking-section" class="service-book-btn">Book Treatment</a>
+                                <span class="card-meta">120 Mins &bull; R180</span>
+                                <p>Featherlight premium synthetic extensions strategically styled to construct beautiful structural density.</p>
+                                <a href="#booking-section" class="card-link">Reserve Treatment</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Slimming Category -->
+                <!-- Category: Slimming -->
                 <div class="service-category-group" id="slimming">
                     <div class="grid-3">
                         <div class="service-card">
-                            <div class="service-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80" alt="Body Slimming">
+                            <div class="card-img-holder">
+                                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80" alt="Slimming">
                             </div>
-                            <div class="service-card-content">
-                                <span class="service-duration"><i class="fa-regular fa-clock"></i> 90 Mins</span>
+                            <div class="card-body">
                                 <h3>9-in-1 Cavitation Slimming</h3>
-                                <p class="service-price">R220</p>
-                                <p class="service-description">High-frequency acoustic energy targeting localized fat cells coupled with structural radio frequency skin tightening.</p>
-                                <a href="#booking-section" class="service-book-btn">Book Treatment</a>
+                                <span class="card-meta">90 Mins &bull; R220</span>
+                                <p>Targeted ultrasound compression combined with radio-frequency skin toning to optimize natural cellular structure contours.</p>
+                                <a href="#booking-section" class="card-link">Reserve Treatment</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Luxury Spa Packages -->
+    <!-- Packages Section -->
     <section id="packages" class="packages-section section-padding">
         <div class="container">
             <div class="text-center">
-                <span class="section-subtitle">Curated Curations</span>
-                <h2 class="section-title">The Ultimate Spa Ensembles</h2>
+                <span class="section-subtitle">Curated Ritual Blocks</span>
+                <h2 class="section-title">The Luxury Assemblages</h2>
             </div>
-            <div class="grid-4">
-                <!-- Package 1 -->
-                <div class="package-card">
-                    <h3>Relaxation Package</h3>
-                    <p class="package-meta">Aromatherapy Massage + Bespoke Facial</p>
-                    <div class="package-price">R240</div>
-                    <ul class="package-features">
-                        <li>Custom Oil Blends</li>
-                        <li>Hydro-infusion Oxygen Treatment</li>
-                        <li>Complimentary Herbal Elixirs</li>
-                    </ul>
-                    <a href="#booking-section" class="btn btn-primary btn-sm">Reserve Package</a>
+            <div class="grid-3">
+                <div class="package-minimal-card">
+                    <span class="pkg-price">R240</span>
+                    <h3>Relaxation Trio</h3>
+                    <p class="pkg-desc">Bespoke Aromatherapy Core coupled with a custom botanical micro-infusion facial sweep.</p>
+                    <a href="#booking-section" class="btn-text-accent">Book Package &rarr;</a>
                 </div>
-                <!-- Package 2 -->
-                <div class="package-card featured">
-                    <div class="badge">Most Requested</div>
-                    <h3>Couples Retreat</h3>
-                    <p class="package-meta">Couples Ritual Massage + Champagne Lounge Access</p>
-                    <div class="package-price">R460</div>
-                    <ul class="package-features">
-                        <li>Private Dual Suite Session</li>
-                        <li>Dom Pérignon Toast Service</li>
-                        <li>Artisanal Charcuterie Selection</li>
-                    </ul>
-                    <a href="#booking-section" class="btn btn-primary btn-sm">Reserve Package</a>
+                <div class="package-minimal-card featured">
+                    <div class="pkg-tag">Most Requested</div>
+                    <span class="pkg-price">R460</span>
+                    <h3>The Sanctuary Sanctuary</h3>
+                    <p class="pkg-desc">Full dual-therapist ritual sequence, champagne service access window, and organic artisan charcuterie pairing.</p>
+                    <a href="#booking-section" class="btn-text-accent">Book Package &rarr;</a>
                 </div>
-                <!-- Package 3 -->
-                <div class="package-card">
-                    <h3>Beauty Matrix</h3>
-                    <p class="package-meta">Pedicure + Manicure + Classic Lashes</p>
-                    <div class="package-price">R290</div>
-                    <ul class="package-features">
-                        <li>Deep Parrafin Envelopment</li>
-                        <li>Premium Silk Classic Set</li>
-                        <li>Organic Skin Rejuvenation Buffing</li>
-                    </ul>
-                    <a href="#booking-section" class="btn btn-primary btn-sm">Reserve Package</a>
-                </div>
-                <!-- Package 4 -->
-                <div class="package-card">
-                    <h3>The Ultimate Experience</h3>
-                    <p class="package-meta">Full Day Deep Immersive Journey</p>
-                    <div class="package-price">R750</div>
-                    <ul class="package-features">
-                        <li>All Premium Massages Included</li>
-                        <li>Complete Cellular Renewal Therapy</li>
-                        <li>Private Five-Star Butler Catering</li>
-                    </ul>
-                    <a href="#booking-section" class="btn btn-primary btn-sm">Reserve Package</a>
+                <div class="package-minimal-card">
+                    <span class="pkg-price">R290</span>
+                    <h3>The Grooming Matrix</h3>
+                    <p class="pkg-desc">Thermal paraffin boot envelopment, meticulous classic lash configuration, and full nail alignment.</p>
+                    <a href="#booking-section" class="btn-text-accent">Book Package &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Online Booking System -->
+    <!-- Modern Integrated Booking Engine -->
     <section id="booking-section" class="booking-section section-padding">
         <div class="container">
-            <div class="booking-wrapper">
-                <div class="booking-sidebar">
-                    <h3>Your Bespoke Experience</h3>
-                    <p class="sidebar-intro">Follow our intuitive, secured matrix to lock in your luxury treatment session. A 50% deposit ensures absolute exclusivity.</p>
+            <div class="booking-grid">
+                <div class="booking-intro-pane">
+                    <span class="section-subtitle">Reserve Spatial Time</span>
+                    <h2>Secure Your Treatment Window</h2>
+                    <p>Select your ritual parameters. A standard 50% system holding deposit guarantees absolute treatment room exclusivity for your profile window.</p>
                     
-                    <!-- Progress Bar Trackers -->
-                    <div class="booking-progress">
-                        <div class="step-indicator active" data-step="1"><span>1</span> Service Choice</div>
-                        <div class="step-indicator" data-step="2"><span>2</span> Master Artisan</div>
-                        <div class="step-indicator" data-step="3"><span>3</span> Date & Time Selection</div>
-                        <div class="step-indicator" data-step="4"><span>4</span> Client Identity</div>
-                        <div class="step-indicator" data-step="5"><span>5</span> Vault Deposit</div>
-                    </div>
-                </div>
-
-                <div class="booking-main-form">
-                    <form id="luxury-booking-engine">
-                        
-                        <!-- Step 1: Choose Service -->
-                        <div class="booking-step active" id="step-1">
-                            <h2>Select Your Desired Treatment</h2>
-                            <div class="select-wrapper">
-                                <select id="booking-service" required>
-                                    <option value="" disabled selected>Choose a service...</option>
-                                    <option value="Aromatherapy Massage - R140">Aromatherapy Massage (60 Mins) — R140</option>
-                                    <option value="Hot Stone Massage - R165">Hot Stone Massage (75 Mins) — R165</option>
-                                    <option value="Deep Tissue Massage - R155">Deep Tissue Massage (60 Mins) — R155</option>
-                                    <option value="Deluxe Pedicure - R85">Deluxe Pedicure with Gel — R85</option>
-                                    <option value="Full Hollywood Wax - R70">Full Hollywood Wax — R70</option>
-                                    <option value="Premium Volume Lashes - R180">Premium Volume Lashes — R180</option>
-                                    <option value="9-in-1 Cavitation Slimming - R220">9-in-1 Cavitation Slimming — R220</option>
-                                </select>
-                            </div>
-                            <div class="booking-btn-nav">
-                                <button type="button" class="btn btn-primary next-step">Continue to Therapists</button>
-                            </div>
+                    <div class="contact-fast-links">
+                        <div class="fast-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>North 29 Fifth Avenue, Roodepoort</p>
                         </div>
-
-                        <!-- Step 2: Choose Therapist -->
-                        <div class="booking-step" id="step-2">
-                            <h2>Select Master Practitioner</h2>
-                            <div class="therapist-grid">
-                                <label class="therapist-option">
-                                    <input type="radio" name="therapist" value="Lindi" checked>
-                                    <div class="therapist-card-inner">
-                                        <img src="" alt="picture of Lindi">
-                                        <h4>Lindi</h4>
-                                        <p>Neuromuscular Master</p>
-                                    </div>
-                                </label>
-                                <label class="therapist-option">
-                                    <input type="radio" name="therapist" value="Marcus ">
-                                    <div class="therapist-card-inner">
-                                        <img src="" alt="Marcus">
-                                        <h4>Marcus </h4>
-                                        <p>Deep Structural Specialist</p>
-                                    </div>
-                                </label>
-                                <label class="therapist-option">
-                                    <input type="radio" name="therapist" value="First Available Artist">
-                                    <div class="therapist-card-inner">
-                                        <div class="avatar-placeholder"><i class="fa-solid fa-sparkles"></i></div>
-                                        <h4>First Available</h4>
-                                        <p>Elite Direct Assignment</p>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="booking-btn-nav">
-                                <button type="button" class="btn btn-secondary prev-step">Back</button>
-                                <button type="button" class="btn btn-primary next-step">Choose Schedule</button>
-                            </div>
-                        </div>
-
-                        <!-- Step 3: Date & Time -->
-                        <div class="booking-step" id="step-3">
-                            <h2>Schedule Your Dynamic Session</h2>
-                            <div class="datetime-container">
-                                <div class="calendar-input-wrap">
-                                    <label for="booking-date">Select Secure Date</label>
-                                    <input type="date" id="booking-date" required min="2026-06-23">
-                                </div>
-                                <div class="time-slots-wrapper">
-                                    <label>Available Secure Windows</label>
-                                    <div class="time-slots-grid">
-                                        <label class="time-slot"><input type="radio" name="time-slot" value="09:00 AM" checked><span>09:00 AM</span></label>
-                                        <label class="time-slot"><input type="radio" name="time-slot" value="11:30 AM"><span>11:30 AM</span></label>
-                                        <label class="time-slot"><input type="radio" name="time-slot" value="02:00 PM"><span>02:00 PM</span></label>
-                                        <label class="time-slot"><input type="radio" name="time-slot" value="04:30 PM"><span>04:30 PM</span></label>
-                                        <label class="time-slot"><input type="radio" name="time-slot" value="07:00 PM"><span>07:00 PM</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="booking-btn-nav">
-                                <button type="button" class="btn btn-secondary prev-step">Back</button>
-                                <button type="button" class="btn btn-primary next-step">Identity Records</button>
-                            </div>
-                        </div>
-
-                        <!-- Step 4: Customer Information -->
-                        <div class="booking-step" id="step-4">
-                            <h2>Guest Particulars</h2>
-                            <div class="form-group-row">
-                                <div class="input-field-group">
-                                    <label>Full Legal Name</label>
-                                    <input type="text" id="cust-name" required placeholder="Lord / Lady Charles">
-                                </div>
-                                <div class="input-field-group">
-                                    <label>Protected Email Address</label>
-                                    <input type="email" id="cust-email" required placeholder="charles@luxury.com">
-                                </div>
-                            </div>
-                            <div class="form-group-row">
-                                <div class="input-field-group">
-                                    <label>Mobile Number (For Secure Reminders)</label>
-                                    <input type="tel" id="cust-phone" required placeholder="+1 (555) 019-2834">
-                                </div>
-                            </div>
-                            <div class="input-field-group">
-                                <label>Special Bespoke Notes or Health Directives</label>
-                                <textarea id="cust-notes" rows="4" placeholder="Allergies, preferred pressure profile, room temperature preferences..."></textarea>
-                            </div>
-                            <div class="booking-btn-nav">
-                                <button type="button" class="btn btn-secondary prev-step">Back</button>
-                                <button type="button" class="btn btn-primary next-step">Proceed to Deposit</button>
-                            </div>
-                        </div>
-
-                        <!-- Step 5: Secure Payment -->
-                        <div class="booking-step" id="step-5">
-                            <h2>Bespoke Secure Vault Deposit</h2>
-                            <div class="deposit-summary-card">
-                                <h3>Booking Ledger Overview</h3>
-                                <div id="summary-data-manifest">
-                                    <!-- Dynamic text strings injected by main execution cycle -->
-                                </div>
-                                <p class="deposit-disclosure"><i class="fa-solid fa-shield-halved"></i> A 50% non-refundable operational security deposit is processed instantly via premium secure networks.</p>
-                            </div>
-
-                            <div class="payment-methods-grid">
-                                <label class="payment-method-card">
-                                    <input type="radio" name="payment-vendor" value="Credit/Debit Card" checked>
-                                    <div class="vendor-inner">
-                                        <i class="fa-solid fa-credit-card"></i>
-                                        <span>Visa / Mastercard / Amex</span>
-                                    </div>
-                                </label>
-                                <label class="payment-method-card">
-                                    <input type="radio" name="payment-vendor" value="Ozow Instant EFT">
-                                    <div class="vendor-inner">
-                                        <i class="fa-solid fa-building-columns"></i>
-                                        <span>Ozow Secure EFT</span>
-                                    </div>
-                                </label>
-                                <label class="payment-method-card">
-                                    <input type="radio" name="payment-vendor" value="PayFast Gateway">
-                                    <div class="vendor-inner">
-                                        <i class="fa-solid fa-bolt"></i>
-                                        <span>PayFast Systems</span>
-                                    </div>
-                                </label>
-                            </div>
-
-                            <div class="booking-btn-nav">
-                                <button type="button" class="btn btn-secondary prev-step">Back</button>
-                                <button type="submit" class="btn btn-primary" id="final-submit-trigger">Confirm Booking & Pay Deposit</button>
-                            </div>
-                        </div>
-
-                    </form>
-                    
-                    <!-- Dynamic Master Injection Confirmation Element -->
-                    <div class="booking-success-screen" id="success-screen">
-                        <div class="success-icon-shield"><i class="fa-solid fa-circle-check"></i></div>
-                        <h2>Your Ritual is Confirmed</h2>
-                        <p class="success-subtitle">We have successfully verified your reservation and authorized your deposit.</p>
-                        <div class="receipt-box" id="receipt-box-content"></div>
-                        <p class="notification-dispatch-alert">Encrypted notifications have been successfully transmitted via <strong>Email</strong>, <strong>SMS</strong>, and <strong>WhatsApp Business Networks</strong>.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section section-padding">
-        <div class="container">
-            <div class="text-center">
-                <span class="section-subtitle">Visual Solace</span>
-                <h2 class="section-title">The Environment Gallery</h2>
-            </div>
-            <div class="gallery-masonry-grid">
-                <div class="gallery-item"><img src="1.jpeg" alt="Hydrotherapy Lounge"></div>
-                <div class="gallery-item"><img src="2.jpeg" alt="Massage Room"></div>
-                <div class="gallery-item"><img src="3.jpeg" alt="Facial Tech Suite"></div>
-                <div class="gallery-item"><img src="4.jpeg" alt="Deep Therapy"></div>
-                <div class="gallery-item"><img src="5.jpeg" alt="Manicure Lounge"></div>
-                <div class="gallery-item"><img src="6.jpeg" alt="Meditation Garden"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Membership Program -->
-    <section id="membership" class="membership-section section-padding">
-        <div class="container grid-2 align-center">
-            <div>
-                <span class="section-subtitle">Absolute Privilege</span>
-                <h2 class="section-title">The Gold Elite Membership Network</h2>
-                <p class="luxury-paragraph">Elevate your wellness framework from occasional luxury into a structured monthly lifestyle paradigm. Malindo'si Elite patrons gain comprehensive tier access options to the estate portfolio properties globally.</p>
-                <ul class="exclusive-membership-list">
-                    <li><i class="fa-solid fa-check-double text-gold"></i> Guaranteed Next-Day Priority Booking Allocation</li>
-                    <li><i class="fa-solid fa-check-double text-gold"></i> 20% Compounded Discount matrix across all ala-carte modules</li>
-                    <li><i class="fa-solid fa-check-double text-gold"></i> Comprehensive access protocols to monthly VIP Wellness Galas</li>
-                    <li><i class="fa-solid fa-check-double text-gold"></i> Complimentary ultra-premium monthly treatment allowances</li>
-                </ul>
-                <a href="#contact" class="btn btn-primary">Apply for Credentials</a>
-            </div>
-            <div class="membership-badge-display-box">
-                <div class="gold-card-mockup">
-                    <div class="card-logo">Malindo'si ELITE</div>
-                    <div class="card-chip"></div>
-                    <div class="card-number">•••• •••• •••• 8888</div>
-                    <div class="card-holder">GOLD PATRON PASS</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials-section section-padding">
-        <div class="container text-center">
-            <span class="section-subtitle">Client Sentiments</span>
-            <h2 class="section-title">Endorsements From Our Guests</h2>
-            
-            <div class="testimonial-carousel-container">
-                <!-- Testimonial Item active -->
-                <div class="testimonial-item">
-                    <div class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Malindo'si is entirely disconnected from standard reality. The Deep Tissue massage with Elena corrected structural pain patterns I suffered from for years. Pure spatial perfection."</p>
-                    <div class="client-info">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Alexandra V.">
-                        <h4>Alexandra V.</h4>
-                        <span>Verified Elite Member</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gift Vouchers -->
-    <section class="vouchers-section section-padding">
-        <div class="container text-center">
-            <span class="section-subtitle">Presents of Prestige</span>
-            <h2 class="section-title">Extend the Sanctuary Experience</h2>
-            <p class="luxury-paragraph max-w-600">Gift our legendary customized physical treatments packaged within our premium gold-embossed bespoke digital or premium print card formats.</p>
-            <div class="grid-4 mt-4">
-                <div class="voucher-type-card">
-                    <i class="fa-solid fa-gift"></i>
-                    <h3>Digital Gift Cards</h3>
-                    <a href="#contact" class="btn-text-gold">Purchase Securely &rarr;</a>
-                </div>
-                <div class="voucher-type-card">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <h3>Physical Spa Vouchers</h3>
-                    <a href="#contact" class="btn-text-gold">Purchase Securely &rarr;</a>
-                </div>
-                <div class="voucher-type-card">
-                    <i class="fa-solid fa-cake-candles"></i>
-                    <h3>Birthday Bundles</h3>
-                    <a href="#contact" class="btn-text-gold">Purchase Securely &rarr;</a>
-                </div>
-                <div class="voucher-type-card">
-                    <i class="fa-solid fa-champagne-glasses"></i>
-                    <h3>Anniversary Matrices</h3>
-                    <a href="#contact" class="btn-text-gold">Purchase Securely &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Map Section -->
-    <section id="contact" class="contact-section section-padding">
-        <div class="container grid-2">
-            <div class="contact-details-box">
-                <span class="section-subtitle">Operational Hubs</span>
-                <h2 class="section-title">Connect With Us</h2>
-                <p class="luxury-paragraph">Our elite concierges remain dynamically structured to service your demands at any moment.</p>
-                
-                <div class="contact-info-links-stack">
-                    <div class="info-link-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4>Estate Location</h4>
-                            <p>North 29 fifth Avenue,Roodepoort</p>
-                        </div>
-                    </div>
-                    <div class="info-link-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h4>Direct Concierge Hotline</h4>
+                        <div class="fast-item">
+                            <i class="fa-solid fa-phone"></i>
                             <p>+27 74 725 7947</p>
                         </div>
-                    </div>
-                    <div class="info-link-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4>Secure Digital Inboxes</h4>
+                        <div class="fast-item">
+                            <i class="fa-solid fa-envelope"></i>
                             <p>Bookings@malindosi.co.za</p>
                         </div>
                     </div>
-                    <div class="info-link-item">
-                        <i class="fa-solid fa-clock"></i>
-                        <div>
-                            <h4>Operating Parameters</h4>
-                            <p>Mon - Sun: 08:00 AM — 10:00 PM</p>
+                </div>
+
+                <div class="booking-form-pane">
+                    <form id="luxury-booking-engine">
+                        <!-- Select Treatment -->
+                        <div class="form-row">
+                            <label for="booking-service">Choose Treatment Ritual</label>
+                            <select id="booking-service" required>
+                                <option value="" disabled selected>Select from our menu options...</option>
+                                <option value="Aromatherapy Massage - R140">Aromatherapy Massage — R140</option>
+                                <option value="Hot Stone Massage - R165">Hot Stone Massage — R165</option>
+                                <option value="Deep Tissue Massage - R155">Deep Tissue Massage — R155</option>
+                                <option value="Deluxe Pedicure - R85">Deluxe Pedicure with Gel — R85</option>
+                                <option value="Full Hollywood Wax - R70">Full Hollywood Wax — R70</option>
+                                <option value="Premium Volume Lashes - R180">Premium Volume Lashes — R180</option>
+                                <option value="9-in-1 Cavitation Slimming - R220">9-in-1 Cavitation Slimming — R220</option>
+                            </select>
                         </div>
+
+                        <!-- Date and Time Frame -->
+                        <div class="form-group-split">
+                            <div class="form-row">
+                                <label for="booking-date">Target Date</label>
+                                <input type="date" id="booking-date" required min="2026-06-24">
+                            </div>
+                            <div class="form-row">
+                                <label for="booking-time">Preferred Window</label>
+                                <select id="booking-time" required>
+                                    <option value="09:00 AM">09:00 AM Window</option>
+                                    <option value="11:30 AM">11:30 AM Window</option>
+                                    <option value="02:00 PM">02:00 PM Window</option>
+                                    <option value="04:30 PM">04:30 PM Window</option>
+                                    <option value="07:00 PM">07:00 PM Window</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Client Metadata Inputs -->
+                        <div class="form-row">
+                            <label for="cust-name">Full Legal Name</label>
+                            <input type="text" id="cust-name" required placeholder="e.g., Sarah Jenkins">
+                        </div>
+
+                        <div class="form-group-split">
+                            <div class="form-row">
+                                <label for="cust-email">Protected Email</label>
+                                <input type="email" id="cust-email" required placeholder="name@domain.com">
+                            </div>
+                            <div class="form-row">
+                                <label for="cust-phone">Mobile Contact</label>
+                                <input type="tel" id="cust-phone" required placeholder="+27...">
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Ledger Live Compilation Preview -->
+                        <div class="live-ledger-container" id="ledger-preview" style="display:none;">
+                            <h4>Reservation Matrix Profile</h4>
+                            <div id="summary-data-manifest"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width">Process System Reservation</button>
+                    </form>
+
+                    <!-- Success Interface Overlay -->
+                    <div class="booking-success-screen" id="success-screen">
+                        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <h2>Ritual Verified Successfully</h2>
+                        <p>We have authenticated your scheduling profile metrics securely.</p>
+                        <div class="receipt-box" id="receipt-box-content"></div>
                     </div>
                 </div>
-            </div>
-            <div class="map-container-mock" style="position: relative; overflow: hidden;">
-              
-                
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57293.75477817117!2d27.838421832168344!3d-26.16853110292556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959ec217c18a2d%3A0x7d028919cf0e87b!2sRoodepoort!5e0!3m2!1sen!2sza!4v1719154000000!5m2!1sen!2sza" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0; display: block; position: absolute; top:0; left:0; width:100%; height:100%;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="luxury-footer">
-        <div class="container grid-4">
-            <div class="footer-brand-column">
-                <a href="#" class="brand-logo">Malindo'si<span>SPA</span></a>
-                <p>An uncompromising benchmark for luxury medical wellness and elite body therapies globally.</p>
-                <div class="social-icons-wrapper">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="footer-links-column">
-                <h3>Quick Navigation</h3>
-                <ul>
-                    <li><a href="#">Home Base</a></li>
-                    <li><a href="#about">Our Essence</a></li>
-                    <li><a href="#services">The Rituals</a></li>
-                    <li><a href="#packages">Curations</a></li>
-                </ul>
-            </div>
-            <div class="footer-links-column">
-                <h3>Service Categories</h3>
-                <ul>
-                    <li><a href="#services">Advanced Massages</a></li>
-                    <li><a href="#services">Dermal Facials</a></li>
-                    <li><a href="#services">Slimming Systems</a></li>
-                    <li><a href="#services">Nail Contouring</a></li>
-                </ul>
-            </div>
-            <div class="footer-newsletter-column">
-                <h3>The Malindo'si Dispatch</h3>
-                <p>Subscribe to receive high-end wellness alerts and exclusive scheduling opportunities.</p>
-                <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to luxury system.');">
-                    <input type="email" placeholder="Your secure email address" required>
-                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
-                </form>
-            </div>
+    <!-- Interactive Map Module -->
+    <section class="map-section">
+        <div class="map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57293.75477817117!2d27.838421832168344!3d-26.16853110292556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959ec217c18a2d%3A0x7d028919cf0e87b!2sRoodepoort!5e0!3m2!1sen!2sza!4v1719154000000!5m2!1sen!2sza" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-        <div class="footer-bottom text-center">
-            <p>&copy; 2026 Malindo'si SPA Luxury Group. All Rights Reserved. Engineered for Ultimate Privacy and Premium Class Performance.</p>
+    </section>
+
+    <!-- Clean Layout Footer -->
+    <footer class="luxury-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="brand-logo">Malindo'si</a>
+                <p>Establishing flawless restorative benchmarks across luxury mobile and localized treatments globally.</p>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 Malindo'si SPA Luxury Group. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Main JavaScript Logic Engine -->
+    <!-- Core Interactions Engine Link -->
     <script src="script.js"></script>
 </body>
 </html>
