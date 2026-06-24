@@ -14,6 +14,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
+    // RESPONSIVE MOBILE NAVIGATION DRAWER MATRIX
+    // ==========================================
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link, .nav-btn');
+
+    function toggleMenu() {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        
+        // Prevent background document scrolling when fullscreen overlay menu is active
+        document.body.style.overflow = !isExpanded ? 'hidden' : '';
+    }
+
+    menuToggle.addEventListener('click', toggleMenu);
+
+    // Auto-close overlay drawer menu when any individual target link is selected
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    });
+
+    // ==========================================
     // SEAMLESS TREATMENT MENU TABS CONTROLLER
     // ==========================================
     const tabButtons = document.querySelectorAll('.tab-btn');
@@ -27,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.add('active');
             const targetCategory = button.getAttribute('data-category');
             document.getElementById(targetCategory).classList.add('active');
+            
+            // Smoothly auto-scroll horizontal overflow tracking if tab button is clipped on tiny views
+            button.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         });
     });
 
@@ -90,5 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         
         successOutputPane.style.display = 'block';
+        
+        // Ensure successful verification scrolls directly into view context across mobile devices
+        successOutputPane.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
 });

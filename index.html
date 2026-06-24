@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Malindo'si | World-Class Luxury Spa & Wellness Destination</title>
     <meta name="description" content="Indulge in luxury. Experience premium spa, beauty, and wellness treatments designed to rejuvenate your body, mind, and soul.">
     <!-- Google Fonts: Playfair Display for Serifs, Inter for ultra-modern clean sans-serif text -->
@@ -25,12 +25,12 @@
     <header class="luxury-header">
         <div class="nav-container">
             <a href="#" class="brand-logo">Malindo'si</a>
-            <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+            <button class="mobile-nav-toggle" id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-            <nav class="nav-menu">
+            <nav class="nav-menu" id="nav-menu">
                 <ul>
                     <li><a href="#" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">Our Essence</a></li>
@@ -118,12 +118,14 @@
                 <h2 class="section-title">The Wellness Menu</h2>
             </div>
             
-            <div class="services-tabs">
-                <button class="tab-btn active" data-category="massages">Massages</button>
-                <button class="tab-btn" data-category="hands-feet">Hands & Feet</button>
-                <button class="tab-btn" data-category="waxing">Waxing</button>
-                <button class="tab-btn" data-category="lashes">Lashes</button>
-                <button class="tab-btn" data-category="slimming">Slimming</button>
+            <div class="services-tabs-container">
+                <div class="services-tabs">
+                    <button class="tab-btn active" data-category="massages">Massages</button>
+                    <button class="tab-btn" data-category="hands-feet">Hands & Feet</button>
+                    <button class="tab-btn" data-category="waxing">Waxing</button>
+                    <button class="tab-btn" data-category="lashes">Lashes</button>
+                    <button class="tab-btn" data-category="slimming">Slimming</button>
+                </div>
             </div>
 
             <div class="services-display-grid">
